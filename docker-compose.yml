@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  deepseek:
+    image: seuusuario/ollama-deepseek
+    container_name: deepseek
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama:

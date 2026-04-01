@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   deepseek:
-    image: seuusuario/ollama-deepseek
+    image: felipesms/ollama-deepseek
     container_name: deepseek
     ports:
       - "11434:11434"
